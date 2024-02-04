@@ -14,7 +14,7 @@ CREATE OR REPLACE VIEW vw_cliente_plan AS
         ((celeste_cordoba_gimnasio.inscripcion i
         JOIN celeste_cordoba_gimnasio.plan p ON ((p.id_plan = i.id_plan)))
         JOIN celeste_cordoba_gimnasio.cliente c ON ((c.dni = i.dni_cliente)));
-/*Visualizar el nombre y apellido del profesor con la acyividad y la duración de la actividad*/        
+/*Visualizar el nombre y apellido del profesor con la actividad y la duración de la actividad*/        
 CREATE OR REPLACE VIEW vw_actividad_profesor AS
     SELECT 
         `p`.`dni` AS `dni_profesor`,
