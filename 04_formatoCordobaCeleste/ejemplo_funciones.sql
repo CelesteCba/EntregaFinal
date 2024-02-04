@@ -1,0 +1,2 @@
+select celeste_cordoba_gimnasio.cantidad_plan_cliente(cp.id_plan) as "Cantidad de clientes por plan", cp.nombre as "Nombre del plan" from celeste_cordoba_gimnasio.plan cp;
+select celeste_cordoba_gimnasio.actividad_profesor(a.nombre, a.dia, a.id_sucursal) as "Profesor", a.nombre as "Nombre de la actividad", a.dia, a.duracion, s.nombre as "Nombre de la sucursal"   from celeste_cordoba_gimnasio.actividad a inner join celeste_cordoba_gimnasio.sucursal s on s.id_sucursal = a.id_sucursal;

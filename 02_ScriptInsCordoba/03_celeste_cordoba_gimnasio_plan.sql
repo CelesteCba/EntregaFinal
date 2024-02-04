@@ -1,0 +1,1 @@
+INSERT INTO `plan` VALUES (1,'Mensual',1),(2,'Trimestral',3),(3,'Semestral',6),(4,'Anual',12);
